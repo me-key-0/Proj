@@ -1,0 +1,60 @@
+
+body {
+    display: grid;
+    grid-template-rows: 10em 50vh auto 10em;
+    grid-template-columns: 1fr 5fr 2fr 1fr;
+    grid-template-areas: "head head head head"
+                        "hero hero hero hero"
+                        ". main side ."
+                        "foot foot foot foot";
+}
+
+header {
+    grid-area: head;
+}
+
+.hero {
+    grid-area: hero;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/308367/gridarea-hero-bg.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: side;
+    background-color: #e8e8e8;
+}
+
+footer {
+    grid-area: foot;
+}
+
+
+header,
+footer {
+    background-color:#252525;
+    color: #e9d20f ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-title {
+    font-size: 50px;
+    font-style: oblique;
+}
+.hero-subtitle {
+    font-size: larger;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    
+}
